@@ -1,90 +1,895 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>let the party begun</title>
+  <meta charset="UTF-8" />
+
+  <!-- title -->
+  <title>Prayer Times</title>
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp" />
+
+  <!-- Google fonts link for Poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/333b95c1fa.js" crossorigin="anonymous"></script>
+
+  <!-- bootstrap css sheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Main CSS File -->
+  <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <table cellspacing="25">
-        <tr>
-            <td><a href="http://shafirehman.itgo.com/"><img src="images/Shafi ur rehman.png" alt="Shafi ur rehman" height="180"></a></td>
-            <td><h1>Shafi Ur Rehman</h1>
-                <p><em>Sample and Unkown person, <strong>no body cares about him</strong>.</em></p>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Education</h3>
-    <ul>
-        <li><a href="http://shafirehman.itgo.com/">Master in Islamic Studies</a></li>
-        <li>Ba in Humanities</li>
-        <li>SEO course from SEBT</li>
-    </ul>
-    <h3><strong>-: Biograpy :-</strong></h3>
-    <table cellspacing="5">
-        <thead>
-            <tr>
-                <th>Content</th>
-                <th>Discription</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Name</td>
-                <td>Shafi Ur Rehman S/O Gul Rehman</td>
-            </tr>
-            <tr>
-                <td>Religion</td>
-                <td>Islam <em>Hanfi</em></td>
-            </tr>
-            <tr>
-                <td>Nationality</td>
-                <td>Pakistani</td>
-            </tr>
-            <tr>
-                <td>Date of Birth</td>
-                <td>4th Feb 1983</td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td>Mohalla Haji Khel, VPO Baja, Distt & Teh Swabi, KPK, Pakistan.</td>
-            </tr>
-            <tr>
-                <td>Languages</td>
-                <td><ol>
-                    <li>English (Speaking, Reading and writing)</li>
-                    <li>Urdu (Nationnal Language</li>
-                    <li>Pushto (Mother Language)</li>
-                    <li>Arabic (Speaking, Reading and writing)</li>
-                </ol></td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h4><a href="hobbies.html">Hobbies</a></h4>
-    <h4><a href="contact-me.html">Get in touch</a></h4>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="15">
-        <tr>
-            <td>Html</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Css</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Java Script</td>
-            <td>⭐</td>
-        </tr>
-        <tr>
-            <td>SEO</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-    </table>
-    <hr>
+  <!-- ====== Header ====== -->
+  <header>
+    <div>
+      <nav id="full-menu" class="navbar navbar-expand-md fixed-top bg-light navbar-light">
+        <div class="col-10 container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand" href="#"><img class="d-inline-block aligh-top" id="menu-logo" src="images/black.webp"
+              alt="prayer time logo" /></a>
+          <!-- Button which will appear on small screen -->
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <!-- below is our menu-pages -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="anchorFormat" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="anchorFormat" href="./nextPage/indexNextPage.html">Prayer Times</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" id="anchorFormat" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Ramadan
+                </a>
+                <ul class="dropdown-menu" id="dropdownChange">
+                  <li>
+                    <a class="dropdown-item" href="Ramadan-kareem.html">Ramadan Kareem 2023</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Ramadan-Prayer-timinng.html">Ramadan Prayers Timing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Ramadan-fasting-timing.html">Ramadan Fasting Timing</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Ramadan-Full-Calender.html">Download full Month Calender</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="anchorFormat" href="Hijri-Date.html">Hijri Date</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="anchorFormat" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="anchorFormat" href="Contact-Us.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <button id="arabic-toggler" class="btn">العربية | AR</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== Hero Section ===== -->
+  <section class="col-10 container">
+    <!-- Search prayer time on the top-->
+    <div class="hero-part search-bar container-div">
+      <h1>Search Prayer times</h1>
+      <div class="searchBlock" itemscope="itemscope" itemtype="https://schema.org/WebSite">
+        <meta itemprop="url" content="//timesprayer.com/en/" />
+        <form class="searchform" method="get" action="//city-outPut.html" itemprop="potentialAction"
+          itemscope="itemscope" itemtype="https://schema.org/SearchAction">
+          <meta itemprop="target" content="//timesprayer.com/en/search/?q={q}" />
+          <input type="search" name="q" id="q" placeholder="Search Your City ..." autocomplete="off"
+            itemprop="query-input" /><br />
+          <button type="submit" class="search-city" onclick="searchLocation();return false;">
+            Search!
+          </button>
+          <button type="button" class="myLocation" onclick="myLocation()">
+            Get My Location
+          </button>
+        </form>
+      </div>
+      <div id="resultLocation"></div>
+    </div>
 
 
+
+
+
+
+
+    <!-- Current prayer time like location, upcoming time, all prayer today ete -->
+    <div class="col-12 hero-part containerBlock prayer ">
+
+      <!-- location name start -->
+      <div class="location-name">
+        <h2>
+          <a href="//timesprayer.com/en/prayer-times-in-jeddah.html" title="Prayer times in Jeddah city">Jeddah, Saudi
+            Arabia Azan and Prayer times</a>
+        </h2>
+        <!-- detail for location  -->
+        <div class="subpath text-dark">
+          <span>Saudi Arabia</span>
+          ›
+          <span>Jeddah</span>
+        </div>
+        <p>Monday 22 Rajab 1444 Hijri - 2023/02/13</p>
+        <div>
+          <div class="summary local"><span>Time in Jeddah :</span>
+          <time id="timenowinthecity" class="fw-bold"><span>10:49:01 AM</span></time>
+        </div>
+        </div>
+      </div>
+      <!-- upcoming prayertime -->
+      <div class="todaynextprayer" >
+        <div class="col remainingTime">
+          <div class="nextPlayerName">Fajr</div>
+          <div id="countdown">0:22:59</div>
+          <div class="summary">Dhuhr Remaining time</div>
+        </div>
+        
+      </div>
+
+      <!-- today payers times -->
+      <ul class="todayprayer">
+
+        <li class="onprayer">
+
+          <img class="icon" src="//timesprayer.com/images/fajr.svg" width="45" height="45" alt="" srcset="">
+          <time><strong>5:38 AM</strong></time>
+          <div class="temp">Fajr</div>
+        </li>
+        <li class="onprayer ">
+          <img class="icon" src="//timesprayer.com/images/sunrise.svg" width="45" height="45" alt="" srcset="">
+          <time><strong>5:38 AM</strong></time>
+          <div class="temp">Sunrise</div>
+        </li>
+        <li class="onprayer nextprayer">
+          <img class="icon" src="//timesprayer.com/images/dhuhr.svg" width="45" height="45" alt="" srcset="">
+          <time><strong>5:38 AM</strong></time>
+          <div class="temp">Dhuhr</div>
+        </li>
+        <li class="onprayer ">
+          <img class="icon" src="//timesprayer.com/images/asr.svg" width="45" height="45" alt="" srcset="">
+          <time><strong>5:38 AM</strong></time>
+          <div class="temp">Asr</div>
+        </li>
+        <li class="onprayer ">
+          <img class="icon" src="//timesprayer.com/images/maghrib.svg" width="45" height="45" alt="" srcset="">
+          <time><strong>5:38 AM</strong></time>
+          <div class="temp">Maghrib</div>
+        </li>
+        <li class="onprayer ">
+          <img class="icon" src="//timesprayer.com/images/isha.svg" width="45" height="45" alt="" srcset="">
+          <time><strong>5:38 AM</strong></time>
+          <div class="temp">Isha</div>
+        </li>
+      </ul>
+
+      <!-- prayer time setting  -->
+      <div class="prayersettings">
+        <div>
+          <b>Calc Method:</b><br>Mecca - Umm al-Qura
+        </div>
+        <div>
+          <b>Juristic Methods:</b><br>
+          Standard (Shafi, Hanbli, Maliki)
+        </div>
+        <div>
+          <b>Latitude, Longitude:</b><br>
+          21.5169, 39.2192
+        </div>
+        <div>
+          <b>TimeZone:</b><br>
+          Asia/Riyadh (UTC+3)
+        </div>
+      </div>
+      <div class="citySettings">
+        <button id="changeSettings"><img class="icon" src="//timesprayer.com/images/settings.svg" width="15" height="15"
+            alt="" srcset="">
+          Change Setting</button>
+      </div>
+    </div>
+
+
+
+
+      <!-- Near by cities distance -->
+      <div class="containerBlock hero-part more-cities ">
+        <h3>Saudi Arabia cities nearby:</h3>
+        <ul class="lithird">
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-khumrah.html"
+                    title="Prayer times in Khumrah city">Khumrah</a>
+                <span>
+                    7.69km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-baharah.html"
+                    title="Prayer times in Baharah city">Baharah</a>
+                <span>
+                    17.22km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-az-zalal.html"
+                    title="Prayer times in Az zalal city">Az zalal</a>
+                <span>
+                    25.08km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-al-barabir.html"
+                    title="Prayer times in Al barabir city">Al barabir</a>
+                <span>
+                    28.39km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-asfaan.html"
+                    title="Prayer times in Asfaan city">Asfaan</a>
+                <span>
+                    31.2km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-dahaban.html"
+                    title="Prayer times in Dahaban city">Dahaban</a>
+                <span>
+                    31.2km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-abu-irwah.html"
+                    title="Prayer times in Abu irwah city">Abu irwah</a>
+                <span>
+                    34.63km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-abu-marwah.html"
+                    title="Prayer times in Abu marwah city">Abu marwah</a>
+                <span>
+                    36.06km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-hada-ash-sham.html"
+                    title="Prayer times in Hada ash sham city">Hada ash sham</a>
+                <span>
+                    39.4km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-makkah.html"
+                    title="Prayer times in Makkah city">Makkah</a>
+                <span>
+                    41.27km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-mecca.html"
+                    title="Prayer times in Mecca city">Mecca</a>
+                <span>
+                    43.34km</span>
+            </li>
+            <li>
+                <a
+                    href="//timesprayer.com/en/prayer-times-in-ad-daff.html"
+                    title="Prayer times in Ad daff city">Ad daff</a>
+                <span>
+                    44.31km</span>
+            </li>
+        </ul>
+        <div class="clear" style="text-align:right;">
+            <a href="//timesprayer.com/en/prayer-times-cities-saudi-arabia.html">More of Saudi Arabia cities.</a>
+        </div>
+    </div>
+    <!-- end near by cities -->
+
+
+
+  
+    <!-- today hadith -->
+    <div class="hero-part hadith-today">
+
+      <div class="containerBlock todayHadith">
+        <h3>Today Hadith</h3>
+        <p class="reference">
+            <b>Reference:</b>
+            Sahih al-Bukhari,2-Belief, Hadith 30</p>
+        <blockquote style="text-align: justify;direction: rtl;">
+            <span class="arabic_sanad arabic">حَدَّثَنَا سُلَيْمَانُ بْنُ حَرْبٍ، قَالَ
+                حَدَّثَنَا شُعْبَةُ، عَنْ وَاصِلٍ الأَحْدَبِ، عَنِ الْمَعْرُورِ، قَالَ لَقِيتُ
+                أَبَا ذَرٍّ بِالرَّبَذَةِ، وَعَلَيْهِ حُلَّةٌ، وَعَلَى غُلاَمِهِ حُلَّةٌ،
+                فَسَأَلْتُهُ عَنْ ذَلِكَ، فَقَالَ إِنِّي سَابَبْتُ رَجُلاً، فَعَيَّرْتُهُ
+                بِأُمِّهِ، فَقَالَ لِيَ النَّبِيُّ صلى الله عليه وسلم ‏</span>
+            <span class="arabic_text_details arabic">"‏ يَا أَبَا ذَرٍّ أَعَيَّرْتَهُ
+                بِأُمِّهِ إِنَّكَ امْرُؤٌ فِيكَ جَاهِلِيَّةٌ، إِخْوَانُكُمْ خَوَلُكُمْ،
+                جَعَلَهُمُ اللَّهُ تَحْتَ أَيْدِيكُمْ، فَمَنْ كَانَ أَخُوهُ تَحْتَ يَدِهِ
+                فَلْيُطْعِمْهُ مِمَّا يَأْكُلُ، وَلْيُلْبِسْهُ مِمَّا يَلْبَسُ، وَلاَ
+                تُكَلِّفُوهُمْ مَا يَغْلِبُهُمْ، فَإِنْ كَلَّفْتُمُوهُمْ فَأَعِينُوهُمْ ‏"</span><span
+                class="arabic_sanad arabic">‏‏.‏</span>
+            <span class="by">Prophet muhammad (ﷺ)</span>
+        </blockquote>
+        <div class="trans">
+            <p>
+                At Ar-Rabadha I met Abu Dhar who was wearing a cloak, and his slave, too, was
+                wearing a similar one. I asked about the reason for it. He replied, "I abused a
+                person by calling his mother with bad names." The Prophet said to me, 'O Abu
+                Dhar! Did you abuse him by calling his mother with bad names You still have some
+                characteristics of ignorance. Your slaves are your brothers and Allah has put
+                them under your command. So whoever has a brother under his command should feed
+                him of what he eats and dress him of what he wears. Do not ask them (slaves) to
+                do things beyond their capacity (power) and if you do so, then help them.' "
+                <p></b>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- today dua -->
+    <div class="hero-part dua-today">
+
+
+      <!-- today dowa -->
+      <div class="containerBlock todayHadith">
+        <h3>Today Dua (For forgiveness and Allah's mercy)</h3>
+        <div class="subpath">
+            <span>Dua and Azkar</span>
+            ›
+            <span>Livelihood</span>
+        </div>
+        <div class="blockHighLight">
+            Our Lord! We have wronged our own souls: If thou forgive us not and bestow not
+            upon us Thy Mercy, we shall certainly be lost.
+        </div>
+        <div class="trans">
+            <b>Benefits this dua:</b>
+            <ul>
+                <li>Read this dua to atone your sins! Prophet Adam (AS) and Hawwa (AS) asked
+                    forgiveness from Allah by reciting this dua.</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- world prayer time by county -->
+    <div class="hero-part world-prayer">
+
+      <div class="containerBlock world">
+        <h3>World Prayer Times</h3>
+        <ul>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-saudi-arabia.html"
+                    title="Prayer Times Saudi Arabia">
+                    <span class="flag" style="background-position: 0 76.033058%"></span>
+                    Prayer Times Saudi Arabia</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-egypt.html" title="Prayer Times Egypt">
+                    <span class="flag" style="background-position: 0 25.619835%"></span>
+                    Prayer Times Egypt</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-emirates.html" title="Prayer Times Emirates">
+                    <span class="flag" style="background-position: 0 .826446%"></span>
+                    Prayer Times Emirates</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-yemen.html" title="Prayer Times Yemen">
+                    <span class="flag" style="background-position: 0 98.347107%"></span>
+                    Prayer Times Yemen</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-palestine.html" title="Prayer Times Palestine">
+                    <span class="flag" style="background-position: 0"></span>
+                    Prayer Times Palestine</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-libya.html" title="Prayer Times Libya">
+                    <span class="flag" style="background-position: 0 53.305785%"></span>
+                    Prayer Times Libya</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-morocco.html" title="Prayer Times Morocco">
+                    <span class="flag" style="background-position: 0 53.719008%"></span>
+                    Prayer Times Morocco</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-tunisia.html" title="Prayer Times Tunisia">
+                    <span class="flag" style="background-position: 0 88.016529%"></span>
+                    Prayer Times Tunisia</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-algeria.html" title="Prayer Times Algeria">
+                    <span class="flag" style="background-position: 0 24.380165%"></span>
+                    Prayer Times Algeria</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-iraq.html" title="Prayer Times Iraq">
+                    <span class="flag" style="background-position: 0 41.735537%"></span>
+                    Prayer Times Iraq</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-sudan.html" title="Prayer Times Sudan">
+                    <span class="flag" style="background-position: 0 77.272727%"></span>
+                    Prayer Times Sudan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-kuwait.html" title="Prayer Times Kuwait">
+                    <span class="flag" style="background-position: 0 47.933884%"></span>
+                    Prayer Times Kuwait</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-qatar.html" title="Prayer Times Qatar">
+                    <span class="flag" style="background-position: 0 73.553719%"></span>
+                    Prayer Times Qatar</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-jordan.html" title="Prayer Times Jordan">
+                    <span class="flag" style="background-position: 0 43.801653%"></span>
+                    Prayer Times Jordan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-lebanon.html" title="Prayer Times Lebanon">
+                    <span class="flag" style="background-position: 0 49.586777%"></span>
+                    Prayer Times Lebanon</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-syria.html" title="Prayer Times Syria">
+                    <span class="flag" style="background-position: 0 83.471074%"></span>
+                    Prayer Times Syria</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-oman.html" title="Prayer Times Oman">
+                    <span class="flag" style="background-position: 0 67.768595%"></span>
+                    Prayer Times Oman</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-india.html" title="Prayer Times India">
+                    <span class="flag" style="background-position: 0 40.909091%"></span>
+                    Prayer Times India</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-turkey.html" title="Prayer Times Turkey">
+                    <span class="flag" style="background-position: 0 89.256198%"></span>
+                    Prayer Times Turkey</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-united-kingdom.html"
+                    title="Prayer Times United Kingdom">
+                    <span class="flag" style="background-position: 0 92.561983%"></span>
+                    Prayer Times United Kingdom</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-russia.html" title="Prayer Times Russia">
+                    <span class="flag" style="background-position: 0 75.206612%"></span>
+                    Prayer Times Russia</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-united-states.html"
+                    title="Prayer Times United States">
+                    <span class="flag" style="background-position: 0 93.38843%"></span>
+                    Prayer Times United States</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-mauritania.html" title="Prayer Times Mauritania">
+                    <span class="flag" style="background-position: 0 59.090909%"></span>
+                    Prayer Times Mauritania</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-south-korea.html"
+                    title="Prayer Times South Korea">
+                    <span class="flag" style="background-position: 0 47.520661%"></span>
+                    Prayer Times South Korea</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-north-korea.html"
+                    title="Prayer Times North Korea">
+                    <span class="flag" style="background-position: 0 47.107438%"></span>
+                    Prayer Times North Korea</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-indonesia.html" title="Prayer Times Indonesia">
+                    <span class="flag" style="background-position: 0 39.669421%"></span>
+                    Prayer Times Indonesia</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-malaysia.html" title="Prayer Times Malaysia">
+                    <span class="flag" style="background-position: 0 61.983471%"></span>
+                    Prayer Times Malaysia</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-philippines.html"
+                    title="Prayer Times Philippines">
+                    <span class="flag" style="background-position: 0 69.834711%"></span>
+                    Prayer Times Philippines</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-canada.html" title="Prayer Times Canada">
+                    <span class="flag" style="background-position: 0 14.876033%"></span>
+                    Prayer Times Canada</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-france.html" title="Prayer Times France">
+                    <span class="flag" style="background-position: 0 29.752066%"></span>
+                    Prayer Times France</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-bahrain.html" title="Prayer Times Bahrain">
+                    <span class="flag" style="background-position: 0 9.504132%"></span>
+                    Prayer Times Bahrain</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-china.html" title="Prayer Times China">
+                    <span class="flag" style="background-position: 0 19.008264%"></span>
+                    Prayer Times China</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-japan.html" title="Prayer Times Japan">
+                    <span class="flag" style="background-position: 0 44.214876%"></span>
+                    Prayer Times Japan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-iran.html" title="Prayer Times Iran">
+                    <span class="flag" style="background-position: 0 42.14876%"></span>
+                    Prayer Times Iran</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-italy.html" title="Prayer Times Italy">
+                    <span class="flag" style="background-position: 0 42.975207%"></span>
+                    Prayer Times Italy</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-germany.html" title="Prayer Times Germany">
+                    <span class="flag" style="background-position: 0 22.31405%"></span>
+                    Prayer Times Germany</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-sweden.html" title="Prayer Times Sweden">
+                    <span class="flag" style="background-position: 0 77.68595%"></span>
+                    Prayer Times Sweden</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-bangladesh.html" title="Prayer Times Bangladesh">
+                    <span class="flag" style="background-position: 0 7.85124%"></span>
+                    Prayer Times Bangladesh</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-pakistan.html" title="Prayer Times Pakistan">
+                    <span class="flag" style="background-position: 0 70.247934%"></span>
+                    Prayer Times Pakistan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-afghanistan.html"
+                    title="Prayer Times Afghanistan">
+                    <span class="flag" style="background-position: 0 1.239669%"></span>
+                    Prayer Times Afghanistan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-kazakhstan.html" title="Prayer Times Kazakhstan">
+                    <span class="flag" style="background-position: 0 48.760331%"></span>
+                    Prayer Times Kazakhstan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-spain.html" title="Prayer Times Spain">
+                    <span class="flag" style="background-position: 0 26.859504%"></span>
+                    Prayer Times Spain</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-norway.html" title="Prayer Times Norway">
+                    <span class="flag" style="background-position: 0 65.702479%"></span>
+                    Prayer Times Norway</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-cities-nigeria.html" title="Prayer Times NIGERIA">
+                    <span class="flag" style="background-position: 0 64.46281%"></span>
+                    Prayer Times NIGERIA</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+
+    </div>
+
+
+
+    <!-- major islamic cities in world -->
+    <div class="hero-part islamic-cities">
+
+      <div class="containerBlock ">
+        <h3>Major Islamic World Cities</h3>
+        <ul class="lithird major">
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-riyadh.html"
+                    title="Prayer times in Riyadh city">Riyadh</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-cairo.html"
+                    title="Prayer times in Cairo city">Cairo</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-alexandria.html"
+                    title="Prayer times in Alexandria city">Alexandria</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-sanaa.html"
+                    title="Prayer times in Sanaa city">Sanaa</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-casablanca.html"
+                    title="Prayer times in Casablanca city">Casablanca</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-algiers.html"
+                    title="Prayer times in Algiers city">Algiers</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-baghdad.html"
+                    title="Prayer times in Baghdad city">Baghdad</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-khartoum.html"
+                    title="Prayer times in Khartoum city">Khartoum</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-amman.html"
+                    title="Prayer times in Amman city">Amman</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-ankara.html"
+                    title="Prayer times in Ankara city">Ankara</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-istamboul-istanbul.html"
+                    title="Prayer times in istamboul istanbul city">istamboul istanbul</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-jakarta.html"
+                    title="Prayer times in Jakarta city">Jakarta</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-surabaya.html"
+                    title="Prayer times in Surabaya city">Surabaya</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-bandung.html"
+                    title="Prayer times in Bandung city">Bandung</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-medan.html"
+                    title="Prayer times in Medan city">Medan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-semarang.html"
+                    title="Prayer times in Semarang city">Semarang</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-yogyakarta.html"
+                    title="Prayer times in Yogyakarta city">Yogyakarta</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-kuala-lumpur.html"
+                    title="Prayer times in Kuala lumpur city">Kuala lumpur</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-dhaka.html"
+                    title="Prayer times in Dhaka city">Dhaka</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-chittagong.html"
+                    title="Prayer times in Chittagong city">Chittagong</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-karachi.html"
+                    title="Prayer times in Karachi city">Karachi</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-tehran.html"
+                    title="Prayer times in Tehran city">Tehran</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-mashhad.html"
+                    title="Prayer times in Mashhad city">Mashhad</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-kabul.html"
+                    title="Prayer times in Kabul city">Kabul</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-mecca.html"
+                    title="Prayer times in Mecca city">Mecca</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-lagos.html"
+                    title="Prayer times in Lagos city">Lagos</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-peshawar.html"
+                    title="Prayer times in Peshawar city">Peshawar</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-multan.html"
+                    title="Prayer times in Multan city">Multan</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-lahore.html"
+                    title="Prayer times in Lahore city">Lahore</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-islamabad.html"
+                    title="Prayer times in Islamabad city">Islamabad</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-sialkot.html"
+                    title="Prayer times in Sialkot city">Sialkot</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-gujranwala.html"
+                    title="Prayer times in Gujranwala city">Gujranwala</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-sargodha.html"
+                    title="Prayer times in Sargodha city">Sargodha</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-bahawalpur.html"
+                    title="Prayer times in Bahawalpur city">Bahawalpur</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-faisalabad.html"
+                    title="Prayer times in Faisalabad city">Faisalabad</a>
+            </li>
+            <li>
+                <a href="//timesprayer.com/en/prayer-times-in-abidjan.html"
+                    title="Prayer times in Abidjan city">Abidjan</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    </div>
+
+    <div class="hero-part dua-today">
+
+
+      <!-- today dowa -->
+      <div class="containerBlock prayerArticle">
+        <h3>The Importance of Prayers and its timing in Islam</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eos sint, eaque itaque corrupti recusandae reprehenderit voluptates neque consequuntur hic.</p>
+        <h4>Lorem ipsum dolor sit amet consectetur </h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur facere fugiat voluptatibus error harum dolorum itaque, porro maiores placeat assumenda natus laborum corporis pariatur voluptate exercitationem. A unde rerum ea nam, laudantium ipsa soluta? Dolor ex molestiae qui, maxime doloremque amet repudiandae, harum dolorem vero culpa incidunt dolorum expedita?</p>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non harum tenetur labore mollitia reprehenderit incidunt consequuntur necessitatibus officiis eum?</p>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, nesciunt. Animi atque facere sint molestias odit odio pariatur modi, omnis illum, quae neque vero nesciunt accusantium ab ipsum in culpa.</p>
+        
+    </div>
+
+ <!-- Start Footer -->
+
+<!-- End Footer -->
+
+    <!-- this is use in js -->
+    <div id="hashSpace"></div>
+
+    
+  </section>
+  <div class="center45">
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <img src="images/white.webp" alt="Prayer Logo image" class="footer-logo" >
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+               </div>
+        <div class="box">
+          <ul class="links">
+            <li>
+              <a href="Privacy-Policy.html">Privay Policy</a>
+            </li>
+            <li>
+              <a href="Disclaimer.html">Discalimer</a>
+            </li>
+            <li>
+              <a href="Terms-Conditions.html">terms & Conditions</a>
+            </li>
+            <li>
+              <a href="About-ads.html">About Ads</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <div class="line">
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+            <div class="info">Pakistan, KPK, swabi, Baja</div>
+          </div>
+          <div class="line">
+            <i class="far fa-clock fa-fw"></i>
+            <div class="info">Business Hours: From 10:00 To 18:00</div>
+          </div>
+          <div class="line">
+            <i class="fas fa-phone-volume fa-fw"></i>
+            <div class="info">
+              <span>+92-3333498937</span>
+              <span>+966-568407707</span>
+            </div>
+          </div>
+        </div>
+        <div class="box footer-gallery">
+          <img src="./images/Nisah-103.webp" alt="Sora Nisah Ayah # 103" />
+          
+        </div>
+      </div>
+      <p class="copyright">Copyright © 2023. All rights reserved.</p>
+    </div>
+  </div>
+  <!-- Start Footer -->
+
+  <!-- End Footer -->
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
