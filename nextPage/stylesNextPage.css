@@ -1,0 +1,575 @@
+
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+   
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+      font-family: "poppins";
+      font-size: 16px;
+      color: #585858;
+      background-color: #f9ffff;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 600;
+  }
+  /*  Notes: 1. ids added in order to overwrite bootstrap properties */
+  
+  /* ===== Navigation bar menu ===== */
+  #full-menu {
+      box-shadow: 0 5px 5px -6px #777;
+  }
+  .container-fluid {
+      padding: 10px 15px 0 15px;
+  }
+  
+  #anchorFormat {
+      text-decoration: none;
+      color: rgba(34, 54, 69, .7);
+      font-weight: 500;
+  }
+  #anchorFormat:hover {
+      color: #e74c3c;
+  }
+  #arabic-toggler:hover {
+      color: #e74c3c;
+  }
+  #arabic-toggler {
+      font-weight: 600;
+      font-family: "IBM Plex Sans Arabic"; 
+  }
+  #dropdownChange {
+      font-size: 15px;
+  }
+  #menu-logo {
+      position: absolute;
+      top:0px;
+      height:70px;
+  }
+  ul {
+      list-style-type: none;
+  }
+  .navbar .navbar-band a {
+      padding: 1rem 0;
+      display: block;
+      text-decoration: none;
+  }
+  
+  
+  /* ===== Hero Section===== */
+  .thisPage {
+    margin-top: 69px;
+  }
+ 
+  .lithird li span {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .clear {
+    clear: both;
+  }
+      
+  @media only screen and (max-width: 1038px) {
+    .lithird li {
+        width: 49%;
+    }
+  
+    .autocomplete-items {
+        right: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .lithird li {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+ 
+  }
+.header {
+    padding: 30px 0 0 0;
+    text-align: center;
+    background-color: #FFF
+}
+
+.but {
+    padding: 0 10px;
+    display: inline-block;
+    background: #009688;
+    color: #ffffff;
+    margin-top: 10px;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 28px;
+    border-width: 0;
+    cursor: pointer
+}
+
+.container {
+    padding: 0;
+    line-height: 28px;
+    max-width: 1110px;
+    margin: 0 auto
+}
+
+#header {
+    text-align: center;
+    background: #FFF;
+    padding: 30px 0
+}
+
+.containerBlock {
+    background-color: #FFF;
+    padding: 30px;
+    margin-top: 30px
+}
+
+.containerBlock h1 {
+    font-size: 26px
+}
+
+.containerBlock h2 {
+    font-size: 20px
+}
+
+
+@media only screen and (max-width:640px) {
+    h1 {
+        font-size: 26px
+    }
+}
+
+
+.clear {
+    clear: both
+}
+
+
+.breadcrumb {
+    background-color:#3baad6 !important;
+}
+
+.breadcrumb ol {
+    padding: 5px 5px;
+    list-style: none;
+    max-width: 1110px;
+    margin: 0 auto;
+    color: #999999
+}
+
+.breadcrumb ol li {
+    display: inline;
+    font-size: 13px;
+    color: #FFF
+}
+
+.breadcrumb ol li a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.breadcrumb ol li a:hover {
+    color: #ccc;
+    text-decoration: underline
+}
+
+@media (max-width:640px) {
+    .breadcrumb {
+        display: none
+    }
+}
+
+.ptTable {
+    width: 100%
+}
+
+.ptTable tr td,
+.ptTable tr th {
+    padding: 5px;
+    border-bottom: rgb(235, 235, 235) solid 1px;
+    font-size: 20px
+}
+
+.ptTable thead tr th {
+    border-bottom: rgb(235, 235, 235) solid 4px
+}
+
+.ptTable tr:nth-child(even) {
+    background: rgb(245, 245, 245)
+}
+
+.ptTable tr.active {
+    color: #A80000;
+    font-weight: bold
+}
+
+.prayerBlock {
+    margin-top: 0
+}
+
+.txt-center {
+    text-align: center
+}
+
+.txt-right {
+    text-align: left
+}
+
+.prayertable {
+    padding: 0
+}
+
+.prayertable ul {
+    width: 100%;
+    list-style: inside
+}
+
+.prayertable ul li {
+    padding: 5px;
+    border-bottom: rgb(235, 235, 235) solid 1px
+}
+
+.prayertable ul li:nth-child(even) {
+    background: rgb(245, 245, 245)
+}
+
+.prayertable ul li.active {
+    color: #A80000;
+    font-weight: bold
+}
+
+.prayerDes {
+    padding: 10px
+}
+
+.listinformation {
+    line-height: 28px
+}
+
+.listinformation .info {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 10px
+}
+
+.prayerInfo {
+    margin-top: 3px
+}
+
+.prayerInfo div {
+    border-bottom: 1px solid #efefef;
+    padding: 3px
+}
+
+.reminingTime {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 5px;
+    border-radius: 5px;
+    background:#00A79D;
+}
+
+#countdown {
+  color: #FFF;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 12px
+}
+
+
+.rows .col4 {
+    width: 32.99%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+.rows label {
+    font-weight: bold;
+    font-size: 12px
+}
+
+.rows .col4 select {
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid rgb(206, 206, 206);
+    background: rgb(243, 252, 237);
+    font-family: tahoma
+}
+
+#changesettings {
+    display: none
+}
+
+.defSettings {
+    display: flex;
+    justify-content: space-between
+}
+
+.defSettings div b {
+    display: block
+}
+
+.listurls {
+    margin-top: 20px;
+    text-align: center
+}
+
+.listurls a {
+    padding: 4px 10px;
+    display: inline-block;
+    background: rgb(231, 231, 231);
+    color: #3B4E13;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-right: 2px;
+    margin-bottom: 4px
+}
+
+.lithird {
+    margin-top: 20px;
+    text-align: center;
+    list-style: none
+}
+
+.lithird li {
+    width: 24%;
+    float: left;
+    padding: 5px;
+    text-align: left
+}
+
+.lithird li a {
+    font-size: 16px;
+    display: block
+}
+
+.lithird li a:before {
+    color: #567c00;
+    content: "\2735";
+    font-weight: bold;
+    padding-right: 5px
+}
+
+.lithird li a:hover {
+    text-decoration: underline
+}
+
+.prayertimerange {
+    width: 100%
+}
+
+.prayertimerange thead tr th {
+    background: rgb(245, 245, 245);
+    padding: 5px;
+    text-align: left
+}
+
+.prayertimerange tbody tr td:first-child {
+    background: rgb(245, 245, 245)
+}
+
+.prayertimerange tbody tr td {
+    border-bottom: 1px solid #E8E8E8;
+    padding: 5px
+}
+
+@media only screen and (max-width:768px) {
+    .mobile {
+        width: 100% !important;
+        display: block
+    }
+
+    .prayertimerange {
+        font-size: 12px;
+        line-height: 16px
+    }
+
+    .lithird li {
+        width: 48%
+    }
+
+    .defSettings {
+        display: flex;
+        justify-content: none;
+        flex-direction: column
+    }
+}
+
+@media only screen and (max-width:350px) {
+    h3 {
+        text-align: center
+    }
+
+    .lithird li {
+        float: none;
+        display: block;
+        min-width: auto;
+        margin: 5px;
+        width: 100%
+    }
+
+    .listinformation .info {
+        padding: 0
+    }
+
+    .listurls a {
+        padding: 0
+    }
+
+    .share {
+        display: block !important
+    }
+
+    .prayertimerange {
+        font-size: 10px;
+        line-height: 16px
+    }
+}
+
+
+/* Start Footer */
+
+.footer {
+  background-color: #191919;
+  padding: 50px 0 0;
+}
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;  
+
+}
+.footer-logo {
+  height: 150px;
+  padding-left: 35px;
+}
+.footer .box .social {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .footer .box .social {
+    justify-content: center;
+  }
+}
+.footer .box .social li {
+  margin-right: 10px;
+}
+.footer .box .social li a {
+  background-color: #313131;
+  color: #b9b9b9;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+.footer .box .social .facebook:hover {
+  background-color: #1877f2;
+}
+.footer .box .social .twitter:hover {
+  background-color: #1da1f2;
+}
+.footer .box .social .youtube:hover {
+  background-color: #ff0000;
+}
+.footer .box .text {
+  line-height: 2;
+  color: #b9b9b9;
+}
+.footer .box .links li {
+  padding: 15px 0;
+  transition: var(--main-transition);
+}
+.footer .box .links li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.footer .box .links li:hover {
+  padding-left: 10px;
+}
+.footer .box .links li:hover a {
+  color: white;
+}
+.footer .box .links li a {
+  color: #b9b9b9;
+  transition: var(--main-transition);
+}
+.footer .box .links li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+.footer .box .line {
+  display: flex;
+  align-items: center;
+  color: #b9b9b9;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .footer .box .line {
+    flex-direction: column;
+  }
+}
+.footer .box .line i {
+  font-size: 25px;
+  color: var(--main-color);
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .footer .box .line i {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.footer .box .line .info {
+  line-height: 1.7;
+  flex: 1;
+}
+.footer .box .line .info span {
+  display: block;
+}
+.footer .footer-gallery img {
+  width: 350px;
+  margin: 2px;
+}
+@media (max-width: 767px) {
+  .footer .footer-gallery img {
+    width: 250px;
+    margin: 2px;
+  }
+}
+.footer .copyright {
+  padding: 25px 0;
+  text-align: center;
+  color: white;
+  margin: 30px 0 0;
+  border-top: 1px solid #444;
+}
+/* End Footer *
