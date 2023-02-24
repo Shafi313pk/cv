@@ -346,6 +346,17 @@ img.flag {
       right: 15px;
   }
 }
+@media only screen and (max-width: 1572px) {
+    .sidebar {
+        left: -225px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 20px;
+  
+    }
+}
 @media (max-width: 800px) {
   .prayersettings {
       flex-direction: column;
