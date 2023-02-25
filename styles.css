@@ -31,11 +31,7 @@ a {
     font-weight: 600;
     padding-left: 15px;
 }
-@media (max-width: 960px) {
-  #anchorFormat {
-    padding: 5px;
-  }
-}
+
 #anchorFormat:hover {
     color: #e74c3c;
 }
@@ -81,19 +77,15 @@ section {
 
 
 /* from copy */
-.searchform {
-  padding: 10px;
-  margin-top: 5px;
-  position: relative;
-  z-index: 1;
-}
+
 .searchform input[type=search] {
-  padding: 13px 10px;
+  padding: 8px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
+  font-size: 18px;
   margin: 5px;
   border: 2px solid rgb(219, 219, 219);
-  border-radius: 8px;
+  border-radius: 5px;
   z-index: 100;
 }
 .searchform .myLocation,
@@ -106,8 +98,9 @@ section {
   border: 2px solid #009688;
   border-radius: 5px;
   min-width: 130px;
-  margin: 5px 0 0 10px;
+  margin: 10px 0 0 10px;
 }
+
 .location-name {
   text-align: left;
 }
@@ -241,7 +234,7 @@ time {
   margin-top: 10px;
   color: #555555;
   padding: 19.2px 30px;
-  border-left: 8px solid  #009688;
+  border-left: 4px solid  #009688;
   line-height: 1.6;
   position: relative;
   background: #EDEDED;
@@ -250,7 +243,7 @@ time {
 blockquote {
   color: #555555;
   padding: 19.2px 50px 19.2px 30px;
-  border-right: 8px solid #009688;
+  border-right: 4px solid #009688;
   line-height: 1.6;
   position: relative;
   background: #EDEDED;
@@ -303,13 +296,14 @@ blockquote span.by {
   clear: both;
 }
 
-.world h3 {
+.world h2 {
   padding-bottom: 5px;
 }
 
 .world ul li {
   float: left;
   width: 260px;
+  text-align: left;
   padding: 2px 0;
 }
 .world ul li a:hover {
@@ -320,7 +314,8 @@ span.flag {
   width: 22px;
   height: 15px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #5053f4;
+  border-radius: 2px;
 }
 
 img.flag {
@@ -328,7 +323,7 @@ img.flag {
 }
 
 .flag {
-  background: url("//timesprayer.com/images/flags_responsive.png") no-repeat;
+  background: url("images/country_flags.webp") no-repeat;
   background-size: 100%;
 }
 
@@ -342,20 +337,6 @@ img.flag {
   .lithird.major li {
       width: 19.5%;
   }
-  .autocomplete-items {
-      right: 15px;
-  }
-}
-@media only screen and (max-width: 1572px) {
-    .sidebar {
-        left: -225px;
-    }
-}
-@media only screen and (max-width: 640px) {
-    h1 {
-        font-size: 20px;
-  
-    }
 }
 @media (max-width: 800px) {
   .prayersettings {
@@ -383,6 +364,44 @@ img.flag {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .searchform input[type=search] {
+    padding: 5px 5px;
+    font-size: 14px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    margin: 5px 0 1px;
+  }
+
+.searchform .myLocation,
+.search-city {
+  padding: 1px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  min-width: 80px;
+  margin-top: 5px;    /* on the full is 10px */
+}
+.searchform {
+  padding-top: 5px 0 0 ;
+  margin: 0;
+}
+.hero-part{
+  background-color: #f8f8f8;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 8px;
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 20px;
+}
+}
+
+
 @media only screen and (max-width: 480px) {
   .lithird li {
       float: none;
@@ -395,7 +414,7 @@ img.flag {
       width: 48.5%;
   }
   .world ul li {
-      padding: 10px;
+      padding: 5px;
       float: none;
       border-bottom: 1px solid #f5f5f5;
       width: auto;
@@ -525,16 +544,9 @@ img.flag {
 .footer .copyright {
   padding: 25px 0;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 30px 0 0;
   border-top: 1px solid #444;
 }
 /* End Footer */
 
-
-/* CSS HEX */
-/* --tea-rose-red: #f5cac3ff;
---process-cyan: #30bcedff;
---nyanza: #e4fde1ff;
---onyx: #403f4cff;
---fern-green: #556f44ff; --> */
