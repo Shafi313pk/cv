@@ -52,6 +52,7 @@ a {
 }
 ul {
     list-style-type: none;
+    padding: 2px;
 }
 .navbar .navbar-band a {
     padding: 1rem 0;
@@ -198,7 +199,6 @@ time {
 
 
 .lithird {
-  margin-top: 20px;
   text-align: center;
   list-style: none;
 }
@@ -248,6 +248,7 @@ blockquote {
   position: relative;
   background: #EDEDED;
   font-size: 18px;
+  text-align: justify;direction: rtl;
 }
 
 blockquote::before {
@@ -279,7 +280,6 @@ blockquote span.by {
   color: rgb(113 149 73);
 }
 .trans {
-  padding: 20px;
   text-align: justify;
 }
 
@@ -338,44 +338,19 @@ img.flag {
       width: 19.5%;
   }
 }
-@media (max-width: 800px) {
-  .prayersettings {
-      flex-direction: column;
-      text-align: left;
-  }
-
-  .prayersettings div {
-      border-bottom: 1px solid #c3e497;
-  }
-
-  .citySettings button {
-      display: block;
-      width: 100%;
-      font-size: 20px;
-      padding: 10px;
-  }
-
-  .todaynextprayer .col {
-      max-width: none;
-      padding: 10px;
-  }
-  .lithird.major li {
-      width: 24.5%;
-  }
-}
 
 @media only screen and (max-width: 767px) {
   .searchform input[type=search] {
-    padding: 5px 5px;
+    padding: 7px;
     font-size: 14px;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 3px;
-    margin: 5px 0 1px;
+    margin: 5px 0 3px;
   }
 
 .searchform .myLocation,
 .search-city {
-  padding: 1px 5px;
+  padding: 5px;
   font-size: 14px;
   font-weight: 500;
   border-radius: 3px;
@@ -399,8 +374,37 @@ h1 {
 h2 {
   font-size: 20px;
 }
+.prayersettings {
+  flex-direction: column;
+  text-align: left;
 }
 
+.prayersettings div {
+  border-bottom: 1px solid #c3e497;
+}
+
+.citySettings button {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.todaynextprayer .col {
+  max-width: none;
+  padding: 10px;
+}
+.lithird.major li {
+  width: 24.5%;
+}
+blockquote {
+  padding: 19.2px 35px 19.2px 10px;
+}
+.blockHighLight {
+  padding: 19.2px 10px;
+}
+
+}
 
 @media only screen and (max-width: 480px) {
   .lithird li {
@@ -410,7 +414,7 @@ h2 {
   }
 
   .lithird.major li {
-      float: left;
+      /* float: left; */
       width: 48.5%;
   }
   .world ul li {
